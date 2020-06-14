@@ -1,10 +1,10 @@
 {
-  "name": "interview",
+  "name": "Arithmetic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "zhoubichaun@icloud.com",
-  "hommepage": "https://github.com/zhoubichuan/Web-Interview/",
+  "hommepage": "https://github.com/zhoubichuan/Web-Arithmetic/",
   "private": true,
   "license": "MIT",
   "scripts": {
