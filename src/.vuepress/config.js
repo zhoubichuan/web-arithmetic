@@ -40,68 +40,71 @@ module.exports = {
     ]
   ],
   port: 3009,
-  dest: 'dist', // 指定 vuepress build 的输出目录
-  serviceWorker: false, // pwa
+  dest: 'dist',
+  serviceWorker: false,
 
-  // 主题配置
   themeConfig: {
     editLinks: true,
-    docsDir: 'src', // 假如文档不是放在仓库的根目录下
+    docsDir: 'src',
     locales: {
       '/': {
-        docsBranch: 'master', // 假如文档放在一个特定的分支下
+        docsBranch: 'master',
         editLinkText: '在github上编辑此页',
-        lastUpdated: '上次更新', // 获取每个文件最后一次 git 提交的时间戳
+        lastUpdated: '上次更新',
         nav: [{
-            text: '前端基础',
+            text: '算法基础',
             items: [{
                 text: '一、十大经典排序算法',
-                link: '/base/1.十大经典排序算法',
+                link: '/base/1.sortAlgorithm',
               },
               {
                 text: '二、贪心算法',
-                link: '/base/2.贪心算法',
+                link: '/base/2.greedyAlgorithm',
               },
               {
                 text: '三、递归算法',
-                link: '/base/3.递归算法',
+                link: '/base/3.recursiveAlgorithm',
               },
               {
-                text: '四、JS面向对象',
-                link: '/base/obj',
+                text: '四、动态规划',
+                link: '/base/4.dynamicProgramming',
               },
               {
-                text: '五、V8引擎机制',
-                link: '/base/v8',
+                text: '五、分治算法',
+                link: '/base/5.divideAndConquerAlgorithm',
               },
               {
-                text: '六、渲染机制',
-                link: '/base/render',
+                text: '六、回溯法',
+                link: '/base/6.backtrackingMethod',
               },
               {
-                text: '七、浏览器缓存',
-                link: '/base/cache',
+                text: '七、分支限界法',
+                link: '/base/7.branchAndBoundMethod',
               },
               {
-                text: '八、排序算法',
-                link: '/base/calc',
+                text: '八、拓扑排序',
+                link: '/base/8.topologicalSorting',
               },
               {
-                text: '九、设计模式',
-                link: '/base/design',
+                text: '九、字符串相关算法',
+                link: '/base/9.stringCorrelationAlgorithm',
               },
               {
-                text: '十、前端安全',
-                link: '/base/safe',
+                text: '十、数组相关算法',
+                link: '/base/10.arrayCorrelationAlgorithm',
               },
               {
-                text: '十一、网络相关',
-                link: '/base/network',
+                text: '十一、链表相关算法',
+                link: '/base/11.linkedListCorrelationAlgorithm',
+              },
+              {
+                text: '十二、树相关算法',
+                link: '/base/12.treeCorrelationAlgorithm',
               },
             ],
           },
           {
-            text: '前端框架',
+            text: '算法书籍',
             link: '/frame/Vue',
             items: [{
               text: '一、Vue',
@@ -198,60 +201,19 @@ module.exports = {
           }
         ],
         sidebar: {
-          '/base/': [{
-              title: '一、十大经典排序算法',
-              collapsable: false,
-              children: ['1.十大经典排序算法']
-            },
-            {
-              title: '二、贪心算法',
-              collapsable: false,
-              children: ['2.贪心算法']
-            },
-            {
-              title: '三、递归算法',
-              collapsable: false,
-              children: ['3.递归算法']
-            },
-            {
-              title: '四、JS面向对象',
-              collapsable: false,
-              children: ['obj']
-            },
-            {
-              title: '五、V8引擎机制',
-              collapsable: false,
-              children: ['v8']
-            },
-            {
-              title: '六、渲染机制',
-              collapsable: false,
-              children: ['render']
-            },
-            {
-              title: '七、浏览器缓存',
-              collapsable: false,
-              children: ['cache']
-            },
-            {
-              title: '八、排序算法',
-              collapsable: false,
-              children: ['calc']
-            },
-            {
-              title: '九、设计模式',
-              collapsable: false,
-              children: ['design']
-            },
-            {
-              title: '十、前端安全',
-              collapsable: false,
-              children: ['safe']
-            }, {
-              title: '十一、网络相关',
-              collapsable: false,
-              children: ['network']
-            },
+          '/base/': [
+            '1.sortAlgorithm',
+            '2.greedyAlgorithm',
+            '3.recursiveAlgorithm',
+            '4.dynamicProgramming',
+            '5.divideAndConquerAlgorithm',
+            '6.backtrackingMethod',
+            '7.branchAndBoundMethod',
+            '8.topologicalSorting',
+            '9.stringCorrelationAlgorithm',
+            '10.arrayCorrelationAlgorithm',
+            '11.linkedListCorrelationAlgorithm',
+            '12.treeCorrelationAlgorithm'
           ],
           '/frame/': [{
               title: '一、Vue',
