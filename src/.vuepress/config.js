@@ -105,24 +105,13 @@ module.exports = {
           },
           {
             text: '算法书籍',
-            link: '/frame/Vue',
             items: [{
-              text: '一、Vue',
-              link: '/frame/Vue',
-            }, {
-              text: '二、React',
-              link: '/frame/React',
-            }, {
-              text: '三、Angular',
-              link: '/frame/Angular',
-            }, {
-              text: '四、小程序',
-              link: '/frame/小程序',
+              text: '一、小灰的算法之旅',
+              link: '/books/1.xiaohuiAlgorithmTour',
             }]
           },
           {
-            text: 'node后端',
-            link: '/service/node',
+            text: 'leetCode',
             items: [{
               text: '一、Node',
               link: '/service/node',
@@ -215,27 +204,7 @@ module.exports = {
             '11.linkedListCorrelationAlgorithm',
             '12.treeCorrelationAlgorithm'
           ],
-          '/frame/': [{
-              title: '一、Vue',
-              collapsable: false,
-              children: ['Vue']
-            },
-            {
-              title: '二、React',
-              collapsable: false,
-              children: ['React']
-            },
-            {
-              title: '三、Angular',
-              collapsable: false,
-              children: ['Angular']
-            },
-            {
-              title: '四、小程序',
-              collapsable: false,
-              children: ['小程序']
-            }
-          ],
+          '/books/': ['1.xiaohuiAlgorithmTour'],
           '/service/': [{
               title: '一、node',
               collapsable: false,
