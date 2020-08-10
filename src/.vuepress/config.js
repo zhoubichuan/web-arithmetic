@@ -9,6 +9,18 @@ module.exports = {
     }
   },
   head: [
+    ['script', {
+      src: 'https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js'
+    }],
+    ['script', {
+      src: 'https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js'
+    }],
+    ['script', {
+      src: 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js'
+    }],
+    ['script', {
+      src: 'https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js'
+    }],
     // 添加链接 pwa 的 manifest 如果需要
     [
       'link',
@@ -39,6 +51,37 @@ module.exports = {
       }
     ]
   ],
+  plugins: [
+    'demo-block',
+    // you can use this plugin multiple times
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'right',
+        defaultTitle: '',
+      },
+    ],
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'theorem',
+        before: info => `<div class="theorem"><p class="title">${info}</p>`,
+        after: '</div>',
+      },
+    ],
+
+    // this is how VuePress Default Theme use this plugin
+    [
+      'vuepress-plugin-container',
+      {
+        type: 'tip',
+        defaultTitle: {
+          '/': 'TIP',
+          '/zh/': '提示',
+        },
+      },
+    ],
+  ],
   port: 3009,
   dest: 'dist',
   serviceWorker: false,
@@ -54,53 +97,13 @@ module.exports = {
         nav: [{
             text: '算法基础',
             items: [{
-                text: '一、十大经典排序算法',
+                text: '一、基础算法',
                 link: '/base/1.sortAlgorithm',
               },
               {
                 text: '二、贪心算法',
                 link: '/base/2.greedyAlgorithm',
-              },
-              {
-                text: '三、递归算法',
-                link: '/base/3.recursiveAlgorithm',
-              },
-              {
-                text: '四、动态规划',
-                link: '/base/4.dynamicProgramming',
-              },
-              {
-                text: '五、分治算法',
-                link: '/base/5.divideAndConquerAlgorithm',
-              },
-              {
-                text: '六、回溯法',
-                link: '/base/6.backtrackingMethod',
-              },
-              {
-                text: '七、分支限界法',
-                link: '/base/7.branchAndBoundMethod',
-              },
-              {
-                text: '八、拓扑排序',
-                link: '/base/8.topologicalSorting',
-              },
-              {
-                text: '九、字符串相关算法',
-                link: '/base/9.stringCorrelationAlgorithm',
-              },
-              {
-                text: '十、数组相关算法',
-                link: '/base/10.arrayCorrelationAlgorithm',
-              },
-              {
-                text: '十一、链表相关算法',
-                link: '/base/11.linkedListCorrelationAlgorithm',
-              },
-              {
-                text: '十二、树相关算法',
-                link: '/base/12.treeCorrelationAlgorithm',
-              },
+              }
             ],
           },
           {
@@ -204,7 +207,7 @@ module.exports = {
             '11.linkedListCorrelationAlgorithm',
             '12.treeCorrelationAlgorithm'
           ],
-          '/books/': ['1.xiaohuiAlgorithmTour'],
+          '/books/': ['1.xiaohuiAlgorithmTour', 'React'],
           '/service/': [{
               title: '一、node',
               collapsable: false,

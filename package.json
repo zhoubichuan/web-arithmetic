@@ -1,7 +1,7 @@
 {
   "name": "Arithmetic",
   "version": "1.0.0",
-  "description": "",
+  "description": "算法学习记录",
   "main": "index.js",
   "author": "zhoubichaun@icloud.com",
   "hommepage": "https://github.com/zhoubichuan/Web-Arithmetic/",
@@ -15,7 +15,10 @@
     "gh-pages": "bash deploy_gh-pages.sh"
   },
   "devDependencies": {
-    "vuepress": "^0.14.4"
+    "vuepress": "^0.14.4",
+    "vuepress-plugin-container": "^2.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vuepress-plugin-demo-block": "^0.7.2"
+  }
 }
