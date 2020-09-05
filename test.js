@@ -99,3 +99,69 @@ console.log(reverseWord('qw3r qwerqas dfawe rfdsgf sddgsdf'))
 // 18、需求：简单错误记录，开发一个简单错误记录功能小模块，能够记录出错的代码所在的文件名称和行号。
 // 19、需求：密码验证合格程序
 // 20、需求：简单密码
+
+// 最大公约数
+let line = 'Aa12('
+let code = 0,
+  haveLetter = 0,
+  haveNumber = 0,
+  havaSymbol = 0,
+  res = ''
+if (line.length <= 4) {
+  code += 5
+} else if (line.length >= 5 && line.length <= 7) {
+  code += 10
+} else if (line.length >= 8) {
+  code += 25
+}
+console.log(res, code)
+if (/[A-Z]/g.test(line)) {
+  haveLetter++
+  code += 10
+}
+if (/[a-z]/g.test(line)) {
+  haveLetter++
+  code += 10
+}
+console.log(res, code)
+if (/[0-9]/g.test(line)) {
+  haveNumber = 1
+  if (/[0-9]+/g.test(line)) {
+    code += 20
+  } else {
+    code += 10
+  }
+}
+console.log(res, code)
+if (/[!"#$%&'()*+,-./x3A0x40x5B0x60x7B0x7E]/g.test(line)) {
+  havaSymbol = 1
+  if (/[!"#$%&'()*+,-./x3A0x40x5B0x60x7B0x7E]+/g.test(line)) {
+    code += 25
+  } else {
+    code += 10
+  }
+}
+console.log(res, code)
+if (haveLetter === 2 && haveNumber && havaSymbol) {
+  code += 5
+} else if (haveLetter && haveNumber && havaSymbol) {
+  code += 3
+} else if (haveLetter && haveNumber) {
+  code += 2
+}
+if (code >= 90) {
+  res = 'VERY_SECURE'
+} else if (code >= 80) {
+  res = 'SECURE'
+} else if (code >= 70) {
+  res = 'VERY_STRONG'
+} else if (code >= 60) {
+  res = 'STRONG'
+} else if (code >= 50) {
+  res = 'AVERAGE'
+} else if (code >= 25) {
+  res = 'WEAK'
+} else if (code >= 0) {
+  res = 'VERY_WEAK'
+}
+console.log(res, code)
