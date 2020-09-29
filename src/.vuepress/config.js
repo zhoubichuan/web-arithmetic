@@ -4,7 +4,7 @@ module.exports = {
   locales: {
     // 默认标题
     '/': {
-      title: '前端算法训练',
+      title: '算法专项总结',
       description: ''
     }
   },
@@ -84,7 +84,7 @@ module.exports = {
   ],
   port: 3009,
   dest: 'dist',
-  serviceWorker: false,
+  serviceWorker: true,
 
   themeConfig: {
     editLinks: true,
