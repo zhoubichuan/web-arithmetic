@@ -108,10 +108,16 @@ module.exports = {
           },
           {
             text: '算法书籍',
-            items: [{
-              text: '一、小灰的算法之旅',
+            items: [
+              {
+              text: '小灰的算法之旅',
               link: '/books/1.xiaohuiAlgorithmTour',
-            }]
+              },
+              {
+                text: '学习Javascript数据结构与算法',
+                link: '/books/1.xiaohuiAlgorithmTour',
+              },
+            ]
           },
           {
             text: 'leetCode',
