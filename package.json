@@ -12,7 +12,8 @@
     "build": "vuepress build src",
     "src:build": "vuepress build src",
     "deploy": "bash deploy.sh",
-    "gh-pages": "bash deploy_gh-pages.sh"
+    "github": "bash github.sh",
+    "gitee": "bash gitee.sh"
   },
   "devDependencies": {
     "vuepress": "^0.14.4",
