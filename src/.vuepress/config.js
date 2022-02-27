@@ -127,6 +127,8 @@ module.exports = {
             '3.recursiveAlgorithm',
             '4.dynamicProgramming',
             '5.divideAndConquerAlgorithm',
+            '5.栈和队列',
+            '06.链表',
             '6.backtrackingMethod',
             '7.branchAndBoundMethod',
             '8.topologicalSorting',
