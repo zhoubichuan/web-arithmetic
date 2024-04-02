@@ -8,7 +8,7 @@ pageClass: page_index
 footer: 我的学习笔记
 meta:
   - name: keywords
-    content: Vue相关,前端学习,前端笔记
+    content: 算法相关,前端学习,前端笔记
 ---
 
 <template>
