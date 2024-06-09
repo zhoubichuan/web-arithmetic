@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Vue学习笔记',
+  title: 'Arithmetic学习笔记',
   description: '风浪没平息 我宣告奔跑的意义',
   base: '/web-arithmetic/', // 部署站点的基础路径
   port: 3009,
@@ -56,36 +56,37 @@ module.exports = {
     editLinks: true,
     docsDir: 'src',
     searchMaxSuggestoins: 10,
-    nav: [{
-      text: '算法基础',
-      items: [
-        {
-          text: '一.基础知识',
-          link: '/base/knowledge/1.index',
-        },
-        {
-          text: '二.基础算法',
-          link: '/base/1.sortAlgorithm',
-        },
-        {
-          text: '三.贪心算法',
-          link: '/base/2.greedyAlgorithm',
-        }
-      ],
-    },
-    {
-      text: '算法书籍',
-      items: [
-        {
-          text: '一.小灰的算法之旅',
-          link: '/books/1/1.index',
-        },
-        {
-          text: '二.学习Javascript数据结构与算法',
-          link: '/books/2/1.index',
-        },
-      ]
-    }
+    nav: [
+      {
+        text: '算法基础',
+        items: [
+          {
+            text: '一.基础知识',
+            link: '/base/knowledge/1.index',
+          },
+          {
+            text: '二.基础算法',
+            link: '/base/1.sortAlgorithm',
+          },
+          {
+            text: '三.贪心算法',
+            link: '/base/2.greedyAlgorithm',
+          }
+        ],
+      },
+      {
+        text: '算法书籍',
+        items: [
+          {
+            text: '一.小灰的算法之旅',
+            link: '/books/1/1.index',
+          },
+          {
+            text: '二.学习Javascript数据结构与算法',
+            link: '/books/2/1.index',
+          },
+        ]
+      }
     ],
     sidebar: {
       '/base/knowledge/': [
